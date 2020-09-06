@@ -1,3 +1,44 @@
+.menu-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #00000040;
+  opacity: 1;
+  transition: opacity 300ms;
+  z-index: 2; }
+
+.menu {
+  width: 0;
+  height: 100%;
+  background-color: #2D303A;
+  box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  opacity: 1;
+  transition: width 300ms; }
+
+.menu-slide {
+  width: 75%; }
+
+.navigation-mobile {
+  width: 205px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 0 0 20%; }
+  .navigation-mobile__menu {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.035em;
+    color: white; }
+    .navigation-mobile__menu:hover {
+      color: #F06C64; }
+
 .header {
   position: relative;
   display: flex;
@@ -8,8 +49,12 @@
   background: #2D303A;
   color: white; }
 
-.menu {
-  display: none; }
+.menu-button {
+  display: none;
+  z-index: 3; }
+
+.menu-rotate {
+  transform: rotate(-90deg); }
 
 .title {
   display: flex; }
@@ -19,6 +64,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
+    color: white;
     line-height: 30px;
     letter-spacing: -0.03em; }
   .title span {
@@ -48,7 +94,7 @@
   .header {
     padding: 0 20px;
     justify-content: center; }
-  .menu {
+  .menu-button {
     width: 25px;
     height: 20px;
     position: absolute;
@@ -56,8 +102,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer; }
-    .menu__line {
+    cursor: pointer;
+    transition: transform 300ms; }
+    .menu-button__line {
       width: 25px;
       height: 2.4px;
       background-color: white;
@@ -452,9 +499,11 @@ body {
   margin: 0 auto;
   padding: 0; }
 
-.container {
-  max-width: 1020px;
-  margin: 0 auto; }
+.link {
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: 0; }
 
 .block__title {
   margin: 0;
@@ -483,6 +532,13 @@ body {
 
 .red {
   background-color: #EA676B; }
+
+.hidden {
+  opacity: 0;
+  z-index: 0; }
+
+.scroll-lock {
+  overflow: hidden; }
 
 @media screen and (max-width: 375px) {
   .border {

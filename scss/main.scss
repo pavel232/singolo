@@ -1,3 +1,4 @@
+@import "_menu";
 @import "_header";
 @import "_slider";
 @import "_services";
@@ -15,9 +16,11 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 1020px;
-    margin: 0 auto;
+.link {
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
 }
 
 .block__title {
@@ -51,6 +54,15 @@ body {
 
 .red {
     background-color: #EA676B;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: 0;
+}
+
+.scroll-lock {
+    overflow: hidden;
 }
 
 @media screen and (max-width: 375px) {

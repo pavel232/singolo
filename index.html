@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <title>Singolo</title>
 </head>
 <body>
+    <div id="menu" class="menu-wrapper hidden">
+         <div id="menu-slider" class="menu">
+             <div class="header">
+                 <div class="title">
+                     <h1 class="title__text">SINGOLO</h1>
+                     <span>*</span>
+                 </div>
+             </div>
+            <nav class="navigation-mobile">
+                <a class="navigation-mobile__menu" href="#">home</a>
+                <a class="navigation-mobile__menu" href="#services">services</a>
+                <a class="navigation-mobile__menu" href="#portfolio">portfolio</a>
+                <a class="navigation-mobile__menu" href="#about">about</a>
+                <a class="navigation-mobile__menu" href="#quote">contact</a>
+            </nav>
+         </div>   
+    </div>
+
     <header class="header">
-        <div class="menu">
-            <div class="menu__line"></div>
-            <div class="menu__line"></div>
-            <div class="menu__line"></div>
+        <div id="menu-button" class="menu-button">
+            <div class="menu-button__line"></div>
+            <div class="menu-button__line"></div>
+            <div class="menu-button__line"></div>
         </div>
         <div class="title">
             <h1 class="title__text">SINGOLO</h1>
@@ -47,8 +65,9 @@
     </div>
 
     <div class="border red"></div>
-
-    <div class="services"><a name="services"></a>
+    
+    <a class="link" name="services"></a>
+    <div class="services">
         <h2 class="block__title">Our Services</h2>
         <p class="block__description service-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="services-list">
@@ -104,7 +123,8 @@
 
     <div class="border"></div>
 
-    <div class="portfolio"><a name="portfolio"></a>
+    <a class="link" name="portfolio"></a>
+    <div class="portfolio">
         <h2 class="block__title">Portfolio</h2>
         <p class="block__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
         <div class="web-filter">
@@ -132,7 +152,8 @@
 
     <div class="border dark"></div>
 
-    <div class="about"><a name="about"></a>
+    <a class="link" name="about"></a>
+    <div class="about">
         <h2 class="block__title">About Us</h2>
         <p class="block__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="cards">
@@ -174,7 +195,8 @@
         </div>
     </div>
 
-    <div class="quote"><a name="quote"></a>
+    <a class="link" name="quote"></a>
+    <div class="quote">
         <h2 class="quote__title">Get a Quote</h2>
         <p class="quote__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="quote-container">
@@ -210,5 +232,7 @@
         </div>
     </div>
     
+    <script src="./script/jquery-3.5.1.min.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
