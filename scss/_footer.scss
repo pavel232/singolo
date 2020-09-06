@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    padding: 0 40px;
+    background-color: #2D303A;
+
+    &__copyright {
+        color: #666D89;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+.social-networks {
+    display: flex;
+    justify-content: space-between;
+    width: 152px;
+    height: 32px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        justify-content: center;
+
+        &__copyright {
+            display: none;
+        }
+    }
+}

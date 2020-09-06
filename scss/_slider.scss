@@ -1,0 +1,57 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 54px 40px;
+    background: #F06C64;
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 796px;
+    }
+}
+
+.slide-button {
+    min-width: 16px;
+    height: 27px;
+    opacity: 0.2;
+    user-select: none;
+    
+    &:hover {
+        cursor: pointer;
+        opacity: 0.4;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.phone-vertical {
+    width: 30.15%;
+}
+
+.phone-horizontal {
+    width: 60.67%;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        padding: 42px 28px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .slider {
+        padding: 20px 10px;
+    }
+
+    .slide-button {
+        min-width: 14px;
+        height: 25px;
+    }
+}
